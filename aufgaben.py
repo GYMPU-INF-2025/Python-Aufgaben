@@ -7,7 +7,7 @@ def aufgabe_1() -> None:
     Hilfe:
     https://www.w3schools.com/python/python_strings.asp
     """
-    print("test")
+    raise NotImplementedError
 
 
 def aufgabe_2() -> None:
@@ -16,12 +16,12 @@ def aufgabe_2() -> None:
     Hilfe:
     https://www.w3schools.com/python/python_strings.asp
     """
-    print("GYMPU")
+    raise NotImplementedError
 
 
 def aufgabe_3() -> int:
     """Geben Sie in dieser Funktion irgendeine Zahl zurück."""
-    return 123
+    raise NotImplementedError
 
 def aufgabe_4(val_1: int, val_2: int) -> int:
     """Schreiben Sie eine Funktion welche 2 Zahlen zusammenaddiert.
@@ -29,7 +29,7 @@ def aufgabe_4(val_1: int, val_2: int) -> int:
     Hilfe:
     https://www.w3schools.com/python/python_operators.asp
     """
-    return val_1 + val_2
+    raise NotImplementedError
 
 
 def aufgabe_5(val_1: int, val_2: int) -> int:
@@ -38,7 +38,7 @@ def aufgabe_5(val_1: int, val_2: int) -> int:
     Hilfe:
     https://www.w3schools.com/python/python_operators.asp
     """
-    return val_1 * val_2
+    raise NotImplementedError
 
 
 def aufgabe_6(val_1: int) -> str:
@@ -47,7 +47,7 @@ def aufgabe_6(val_1: int) -> str:
     Hilfe:
     https://www.w3schools.com/python/python_casting.asp
     """
-    return str(val_1)
+    raise NotImplementedError
 
 
 def aufgabe_7(val_1: int, val_2: int, val_3: str, val_4: bool) -> list[str | bool | int]:
@@ -57,7 +57,7 @@ def aufgabe_7(val_1: int, val_2: int, val_3: str, val_4: bool) -> list[str | boo
     Hilfe:
     https://www.w3schools.com/python/python_lists.asp
     """
-    return [val_1, val_2, val_3, val_4]
+    raise NotImplementedError
 
 def aufgabe_8(val_1: list[int]) -> list[int | str]:
     """Schreiben Sie eine Funktion welche das 1. und das 3. Objekt aus der Liste zu dem String "OPG" ändert.
@@ -66,9 +66,7 @@ def aufgabe_8(val_1: list[int]) -> list[int | str]:
     Listen fangen nicht bei 1, sondern bei 0 anzuzählen!
     https://www.w3schools.com/python/python_lists_change.asp
     """
-    val_1[0] = "OPG"
-    val_1[2] = "OPG"
-    return val_1
+    raise NotImplementedError
 
 def aufgabe_9(val_1: list[int]) -> list[int | str]:
     """Schreiben Sie eine Funktion welche einen String "OPG" zu der Liste hinzufügt.
@@ -76,8 +74,7 @@ def aufgabe_9(val_1: list[int]) -> list[int | str]:
     Hilfe:
     https://www.w3schools.com/python/python_lists_add.asp
     """
-    val_1.append("OPG")
-    return val_1
+    raise NotImplementedError
 
 def aufgabe_10(val_1: int) -> bool:
     """Schreiben Sie eine Funktion welche zurückgibt, ob eine Zahl glatt durch 2 teilbar ist.
@@ -86,7 +83,7 @@ def aufgabe_10(val_1: int) -> bool:
     https://www.w3schools.com/python/python_operators.asp (Modulus)
     https://www.w3schools.com/python/python_booleans.asp
     """
-    return val_1 % 2 == 0
+    raise NotImplementedError
 
 def aufgabe_11(val_1: int) -> None:
     """Schreiben Sie eine Funktion die "Nina" in die Konsole ausgibt, wenn die Zahl größer als 0 ist, und "Ludwig" ausgibt, wenn die Zahl kleiner 0 ist.
@@ -95,12 +92,7 @@ def aufgabe_11(val_1: int) -> None:
     Hilfe:
     https://www.w3schools.com/python/python_conditions.asp
     """
-    if val_1 > 0:
-        print("Nina")
-    elif val_1 == 0:
-        print("Elijah")
-    else:
-        print("Ludwig")
+    raise NotImplementedError
 
 
 def aufgabe_12() -> None:
@@ -111,10 +103,7 @@ def aufgabe_12() -> None:
     Hilfe:
     https://www.w3schools.com/python/python_while_loops.asp
     """
-    i = 1
-    while i < 6:
-        print(i)
-        i += 1
+    raise NotImplementedError
 
 
 def aufgabe_13(val_1: list[str]) -> None:
@@ -125,8 +114,7 @@ def aufgabe_13(val_1: list[str]) -> None:
     Hilfe:
     https://www.w3schools.com/python/python_for_loops.asp
     """
-    for x in val_1:
-        print(x)
+    raise NotImplementedError
 
 def aufgabe_14() -> str:
     """Schreiben Sie eine Funktion welche eingabe des Nutzers über die Konsole verlangt,
@@ -135,8 +123,6 @@ def aufgabe_14() -> str:
     Hilfe:
     https://www.w3schools.com/python/python_user_input.asp
     """
-    var = input("Input: ")
-    print(var)
-    return var
+    raise NotImplementedError
     
     
