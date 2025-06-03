@@ -1,3 +1,4 @@
+import copy
 import logging
 import typing
 from collections.abc import Callable
@@ -8,7 +9,7 @@ logger = logging.getLogger(__name__)
 
 __all__ = ("Task",)
 
-FuncT = typing.TypeVar("FuncT", bound=Callable[[typing.Any, ...], typing.Any])
+FuncT = typing.TypeVar("FuncT", bound=Callable[..., typing.Any])
 
 
 class Task:
@@ -23,7 +24,7 @@ class Task:
         if result is None and good_func is None:
             raise RuntimeError("Need to provide one of result or good_func")
         elif result is None:
-            self._result = Result.from_func(good_func, **kwargs)
+            self._result = Result.from_func(good_func, **copy.deepcopy(kwargs))
         else:
             self._result = result
         self._kwargs = kwargs
@@ -34,7 +35,7 @@ class Task:
 
         return_value: typing.Any = None
         with self._result.catch(), self._result.listen():
-            return_value = self._func(**self._kwargs)
+            return_value = self._func(**copy.deepcopy(self._kwargs))
 
         result = self._result.validate_result(return_value)
         match result:
